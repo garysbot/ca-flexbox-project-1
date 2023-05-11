@@ -1,0 +1,413 @@
+/* Universal Styles */
+* {
+
+}
+
+html {
+    font-size: 16px;
+    font-family: Inter, Helvetica, sans-serif;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Inter, Arial, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 3rem;
+}
+
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+.logo {
+    text-align: center;
+    background-color: #f40009;
+    width: 100%;
+    position: static;
+}
+
+.logo img {
+    width: 15%;
+    margin: 3rem auto 0.5rem auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: #f40009;
+    width: 100%;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar p {
+    margin: 0 auto;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar a {
+    transition-duration: 10s;
+}
+
+.navbar a:hover {
+    text-decoration: underline dashed;
+}
+
+/* Universal Body */
+.container {
+    display: block;
+    text-align: center;
+    height: auto;
+    background-color: #f40009;
+}
+
+.headline {
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    width: 25%;
+}
+
+.image-container img {
+    width: 22rem;
+    height: 18rem;
+    border-radius: 1.875rem;
+    object-fit: cover;
+}
+
+
+/* Section Styling */
+.section h1 {
+    font-size: 3rem;
+}
+
+.section h3 {
+    font-size: 1.75rem;
+    padding-top: 5%;
+}
+
+.section p {
+    font-size: 1.25rem;
+}
+
+.headline h2 {
+    font-size: 2.5rem;
+}
+
+.headline p {
+    font-size: 1.25rem;
+}
+
+/* Controls Section 1's image orientation */
+.one {
+    position: relative;
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    height: 50rem;
+}
+
+/* Controls Section 2's image orientation */
+.two {
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    padding-bottom: 10rem;
+}
+
+/* Controls Section 3 */
+.three {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../imgs/coke-bg.jpg");
+    background-size: cover;
+    height: 50rem;
+}
+
+/* Controls Section 4 Products */
+.product-container {
+    background-color: #F8F0E3;
+    padding-bottom: 10rem;
+}
+
+.product-container h2,
+.product-container p {
+    color: #f40009;
+
+}
+
+.products {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 21.875rem;
+    height: 28.125rem;
+    border-radius: 1.875rem;
+    object-fit: cover;
+}
+
+.product-grid h4,
+.product-grid h5 {
+    color:#f40009;
+}
+
+.product-grid p {
+    width: 18rem;
+    line-height: 2rem;
+}
+
+.product-grid {
+    padding: 1rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.product-grid button {
+    font-family: Inter, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    padding: 1rem;
+    background-color: #f40009;
+    border: none;
+    border-radius: 0.9375rem;
+    margin-bottom: 3rem;
+}
+
+.product-grid button:hover {
+    color:#f40009;
+    background-color: white;
+    cursor: pointer;
+}
+
+.five {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../imgs/fivebg.jpg");
+    background-size: cover;
+    height: auto;
+    padding-bottom: 10rem;
+}
+
+.leadership {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    border-radius: 1000%;
+    height: 15.625rem;
+    width: 15.625rem;
+    object-fit: cover;
+    margin: 2rem;
+}
+
+.profile h4,
+.profile h5 {
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background-color: #f40009;
+    height: 12.5rem;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links p {
+    margin: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline dashed;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .logo img {
+        width: 30%;
+        margin: 3rem auto 0.5rem auto;
+    }
+
+    .one h1 {
+        width: 80%
+    }
+
+    .one p {
+        padding-top: 1rem;
+        width: 60%;
+        line-height: 2rem;
+    }
+
+    .image-container img {
+        width: 17rem;
+        height: 13rem;
+        border-radius: 1.875rem;
+        object-fit: cover;
+    }
+
+    .image-container p {
+        display: none;
+    }
+
+    .product-grid h4 {
+        font-size: 1.75rem;
+    }
+
+    .profile h4 {
+        font-size: 1.25rem;
+    }
+
+    .profile h5 {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (device-width: 390px) and (device-height: 844px)  {
+    .section h1 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+    
+    .section h3 {
+        font-size: 1.75rem;
+        padding-top: 5%;
+    }
+    
+    .section p {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    .headline {
+        text-align: center;
+    }
+
+    .headline h2 {
+        font-size: 3.5rem;
+        margin: 2rem 0;
+        line-height: 5rem;
+    }
+    
+    .headline p {
+        font-size: 2.25rem;
+        margin: 2rem 0;
+    }
+    
+    .product-grid {
+        width: 80%;
+    }
+
+    .product-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-grid h4 {
+        font-size: 3.5rem;
+        padding-top: 2rem;
+    }
+
+    .product-grid p {
+        width: 80%;
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+        padding: 3rem 0;
+    }
+
+    .product-grid button {
+        padding: 3rem 6rem 3rem 6rem;
+        font-size: 2.25rem;
+        margin-bottom: 10rem;
+    }
+
+    .product-grid button:hover {
+        color: #f40009;
+        background-color: white;
+    }
+
+    .profile img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .profile h4 {
+        font-size: 3.5rem;
+        padding-top: 2.25rem;
+    }
+
+    .profile h5 {
+        font-size: 2.5rem;
+        padding: 4rem 0;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer p {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links p {
+        font-size: 2.5rem;
+    }
+}
